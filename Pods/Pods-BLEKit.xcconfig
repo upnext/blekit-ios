@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/AFOAuth1Client" "${PODS_ROOT}/Headers/FSOAuth" "${PODS_ROOT}/Headers/Facebook-iOS-SDK" "${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK" "${PODS_ROOT}/Headers/Foursquare-API-v2" "${PODS_ROOT}/Headers/SAMCache"
+OTHER_CFLAGS = $(inherited) "-isystem${PODS_ROOT}/Headers" "-isystem${PODS_ROOT}/Headers/AFNetworking" "-isystem${PODS_ROOT}/Headers/AFOAuth1Client" "-isystem${PODS_ROOT}/Headers/FSOAuth" "-isystem${PODS_ROOT}/Headers/Facebook-iOS-SDK" "-isystem${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK" "-isystem${PODS_ROOT}/Headers/Foursquare-API-v2" "-isystem${PODS_ROOT}/Headers/SAMCache"
+OTHER_LDFLAGS = -ObjC -framework CoreGraphics -framework CoreLocation -framework Foundation -framework MobileCoreServices -framework Security -framework SystemConfiguration -weak_framework Accounts -weak_framework AdSupport -weak_framework Security -weak_framework Social
+PODS_ROOT = ${SRCROOT}/Pods

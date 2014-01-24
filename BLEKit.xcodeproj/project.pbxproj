@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3496A0822883461BB2F474C2 /* libPods-BLEKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC7D89C54194444AE3E9DBB /* libPods-BLEKit.a */; };
+		750CE5CC18193C5A000CBC40 /* BLEKitDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 750CE5CB18193C5A000CBC40 /* BLEKitDelegate.m */; };
+		750CE5CE1819460A000CBC40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750CE5CD1819460A000CBC40 /* UIKit.framework */; };
+		75108A0D180D90F200ECF848 /* BLETrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75108A0C180D90F200ECF848 /* BLETrigger.m */; };
+		75108A10180D930900ECF848 /* BLEAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 75108A0F180D930900ECF848 /* BLEAction.m */; };
+		75108A13180D931B00ECF848 /* BLECondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 75108A12180D931B00ECF848 /* BLECondition.m */; };
+		751C81BF180D4D3400C636E1 /* BLEZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C81BE180D4D3400C636E1 /* BLEZone.m */; };
+		751E1FCD1834D373003BA246 /* BLEContentAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E1FCC1834D373003BA246 /* BLEContentAction.m */; };
+		751E1FD01834D7B8003BA246 /* BLEContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E1FCF1834D7B8003BA246 /* BLEContentViewController.m */; };
+		7521ED801859FB5900F9C9E1 /* BLENotificationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7521ED7F1859FB5900F9C9E1 /* BLENotificationAction.m */; };
+		752AB4981833A80E00FEEEBF /* BLEFacebookAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 752AB4951833A80E00FEEEBF /* BLEFacebookAction.m */; };
+		757140AF185B365F00FDACBC /* BLEFoursquareAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 757140AE185B365F00FDACBC /* BLEFoursquareAction.m */; };
+		75725EF1180C3538000D24E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75725EF0180C3538000D24E8 /* Foundation.framework */; };
+		75725EF6180C3538000D24E8 /* BLEKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75725EF5180C3538000D24E8 /* BLEKit.h */; };
+		75725EF8180C3538000D24E8 /* BLEKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725EF7180C3538000D24E8 /* BLEKit.m */; };
+		75725F19180C3701000D24E8 /* UNURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F18180C3701000D24E8 /* UNURLConnection.m */; };
+		75725F1C180C38F5000D24E8 /* UNMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F1B180C38F5000D24E8 /* UNMutableURLRequest.m */; };
+		75725F1F180C3947000D24E8 /* UNCodingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F1E180C3947000D24E8 /* UNCodingUtil.m */; };
+		75725F22180C3AFC000D24E8 /* BLEBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F21180C3AFC000D24E8 /* BLEBeacon.m */; };
+		75725F25180C3BA0000D24E8 /* BLELocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F24180C3BA0000D24E8 /* BLELocation.m */; };
+		75725F27180C3C32000D24E8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75725F26180C3C32000D24E8 /* CoreLocation.framework */; };
+		757D6344186350B80043FD71 /* SAMCache+BLEKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 757D6343186350B80043FD71 /* SAMCache+BLEKit.m */; };
+		758ECD40183E3D3200A5C383 /* CLBeacon+BLEKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD3F183E3D3200A5C383 /* CLBeacon+BLEKit.m */; };
+		75926A2F187C2702004309A5 /* BLEBeaconsRangeBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 75926A2E187C2702004309A5 /* BLEBeaconsRangeBatch.m */; };
+		75BF1D5F187DF7FD00B29B8A /* BLEEventScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF1D5E187DF7FD00B29B8A /* BLEEventScheduler.m */; };
+		75C57490183668E100FBAF7F /* BLEYelpAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C5748F183668E100FBAF7F /* BLEYelpAction.m */; };
+		75C5749B183676E600FBAF7F /* YLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C57495183676E600FBAF7F /* YLClient.m */; };
+		75D49B2D1833C3EE00FA7D5F /* BLEAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D49B2C1833C3EE00FA7D5F /* BLEAlertAction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75725EEB180C3538000D24E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				75725EF6180C3538000D24E8 /* BLEKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6BC669877EF242D2B1BDCCBF /* Pods-BLEKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEKit.xcconfig"; path = "Pods/Pods-BLEKit.xcconfig"; sourceTree = "<group>"; };
+		750CE5CA18193C5A000CBC40 /* BLEKitDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEKitDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		750CE5CB18193C5A000CBC40 /* BLEKitDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEKitDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		750CE5CD1819460A000CBC40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75108A0A180D87F700ECF848 /* BLEKitPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEKitPrivate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75108A0B180D90F200ECF848 /* BLETrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLETrigger.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75108A0C180D90F200ECF848 /* BLETrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLETrigger.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75108A0E180D930900ECF848 /* BLEAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEAction.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75108A0F180D930900ECF848 /* BLEAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75108A11180D931B00ECF848 /* BLECondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLECondition.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75108A12180D931B00ECF848 /* BLECondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLECondition.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		751C81BD180D4D3400C636E1 /* BLEZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEZone.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		751C81BE180D4D3400C636E1 /* BLEZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEZone.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		751C81C0180D5FE600C636E1 /* UNCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = UNCoding.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		751C81C7180D609900C636E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		751E1FCB1834D373003BA246 /* BLEContentAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEContentAction.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		751E1FCC1834D373003BA246 /* BLEContentAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEContentAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		751E1FCE1834D7B8003BA246 /* BLEContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEContentViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		751E1FCF1834D7B8003BA246 /* BLEContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEContentViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7521ED7E1859FB5900F9C9E1 /* BLENotificationAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLENotificationAction.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7521ED7F1859FB5900F9C9E1 /* BLENotificationAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLENotificationAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		752AB4941833A80E00FEEEBF /* BLEFacebookAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEFacebookAction.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		752AB4951833A80E00FEEEBF /* BLEFacebookAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEFacebookAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		753529321859DE90002C88DB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		753529341859DEA3002C88DB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		757140AD185B365F00FDACBC /* BLEFoursquareAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEFoursquareAction.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		757140AE185B365F00FDACBC /* BLEFoursquareAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEFoursquareAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75725EED180C3538000D24E8 /* libBLEKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBLEKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75725EF0180C3538000D24E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75725EF4180C3538000D24E8 /* BLEKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLEKit-Prefix.pch"; sourceTree = "<group>"; };
+		75725EF5180C3538000D24E8 /* BLEKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEKit.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75725EF7180C3538000D24E8 /* BLEKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEKit.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75725EFE180C3538000D24E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		75725F17180C3701000D24E8 /* UNURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = UNURLConnection.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75725F18180C3701000D24E8 /* UNURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UNURLConnection.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75725F1A180C38F5000D24E8 /* UNMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = UNMutableURLRequest.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75725F1B180C38F5000D24E8 /* UNMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UNMutableURLRequest.m; sourceTree = "<group>"; };
+		75725F1D180C3947000D24E8 /* UNCodingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = UNCodingUtil.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75725F1E180C3947000D24E8 /* UNCodingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UNCodingUtil.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75725F20180C3AFC000D24E8 /* BLEBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEBeacon.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75725F21180C3AFC000D24E8 /* BLEBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEBeacon.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75725F23180C3BA0000D24E8 /* BLELocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLELocation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75725F24180C3BA0000D24E8 /* BLELocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLELocation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75725F26180C3C32000D24E8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		757D6342186350B80043FD71 /* SAMCache+BLEKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "SAMCache+BLEKit.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		757D6343186350B80043FD71 /* SAMCache+BLEKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "SAMCache+BLEKit.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		758ECD3E183E3D3200A5C383 /* CLBeacon+BLEKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "CLBeacon+BLEKit.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		758ECD3F183E3D3200A5C383 /* CLBeacon+BLEKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "CLBeacon+BLEKit.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75926A2D187C2702004309A5 /* BLEBeaconsRangeBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEBeaconsRangeBatch.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75926A2E187C2702004309A5 /* BLEBeaconsRangeBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEBeaconsRangeBatch.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75BF1D5D187DF7FD00B29B8A /* BLEEventScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEEventScheduler.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75BF1D5E187DF7FD00B29B8A /* BLEEventScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEEventScheduler.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75C5748E183668E100FBAF7F /* BLEYelpAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEYelpAction.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75C5748F183668E100FBAF7F /* BLEYelpAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEYelpAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75C57494183676E600FBAF7F /* YLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLClient.h; sourceTree = "<group>"; };
+		75C57495183676E600FBAF7F /* YLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLClient.m; sourceTree = "<group>"; };
+		75D49B2B1833C3EE00FA7D5F /* BLEAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEAlertAction.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		75D49B2C1833C3EE00FA7D5F /* BLEAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEAlertAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AAC7D89C54194444AE3E9DBB /* libPods-BLEKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLEKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75725EEA180C3538000D24E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750CE5CE1819460A000CBC40 /* UIKit.framework in Frameworks */,
+				75725F27180C3C32000D24E8 /* CoreLocation.framework in Frameworks */,
+				75725EF1180C3538000D24E8 /* Foundation.framework in Frameworks */,
+				3496A0822883461BB2F474C2 /* libPods-BLEKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7507F584181162B900C04DE5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				751C81BD180D4D3400C636E1 /* BLEZone.h */,
+				751C81BE180D4D3400C636E1 /* BLEZone.m */,
+				75725F20180C3AFC000D24E8 /* BLEBeacon.h */,
+				75725F21180C3AFC000D24E8 /* BLEBeacon.m */,
+				75108A0B180D90F200ECF848 /* BLETrigger.h */,
+				75108A0C180D90F200ECF848 /* BLETrigger.m */,
+				75108A0E180D930900ECF848 /* BLEAction.h */,
+				75108A0F180D930900ECF848 /* BLEAction.m */,
+				75108A11180D931B00ECF848 /* BLECondition.h */,
+				75108A12180D931B00ECF848 /* BLECondition.m */,
+				75725F23180C3BA0000D24E8 /* BLELocation.h */,
+				75725F24180C3BA0000D24E8 /* BLELocation.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		752AB4931833A80E00FEEEBF /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				75C57491183676E600FBAF7F /* yelp-ios-api-v2 */,
+				75D49B2B1833C3EE00FA7D5F /* BLEAlertAction.h */,
+				75D49B2C1833C3EE00FA7D5F /* BLEAlertAction.m */,
+				7568AE651869B23200AAA978 /* BLEFacebookAction */,
+				7568AE661869B23C00AAA978 /* BLEContentAction */,
+				75C5748E183668E100FBAF7F /* BLEYelpAction.h */,
+				75C5748F183668E100FBAF7F /* BLEYelpAction.m */,
+				7521ED7E1859FB5900F9C9E1 /* BLENotificationAction.h */,
+				7521ED7F1859FB5900F9C9E1 /* BLENotificationAction.m */,
+				757140AD185B365F00FDACBC /* BLEFoursquareAction.h */,
+				757140AE185B365F00FDACBC /* BLEFoursquareAction.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		7568AE651869B23200AAA978 /* BLEFacebookAction */ = {
+			isa = PBXGroup;
+			children = (
+				752AB4941833A80E00FEEEBF /* BLEFacebookAction.h */,
+				752AB4951833A80E00FEEEBF /* BLEFacebookAction.m */,
+			);
+			name = BLEFacebookAction;
+			sourceTree = "<group>";
+		};
+		7568AE661869B23C00AAA978 /* BLEContentAction */ = {
+			isa = PBXGroup;
+			children = (
+				751E1FCB1834D373003BA246 /* BLEContentAction.h */,
+				751E1FCC1834D373003BA246 /* BLEContentAction.m */,
+				751E1FCE1834D7B8003BA246 /* BLEContentViewController.h */,
+				751E1FCF1834D7B8003BA246 /* BLEContentViewController.m */,
+			);
+			name = BLEContentAction;
+			sourceTree = "<group>";
+		};
+		75725EE4180C3538000D24E8 = {
+			isa = PBXGroup;
+			children = (
+				75725EF2180C3538000D24E8 /* BLEKit */,
+				75725EEF180C3538000D24E8 /* Frameworks */,
+				75725EEE180C3538000D24E8 /* Products */,
+				6BC669877EF242D2B1BDCCBF /* Pods-BLEKit.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		75725EEE180C3538000D24E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75725EED180C3538000D24E8 /* libBLEKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75725EEF180C3538000D24E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				753529341859DEA3002C88DB /* MobileCoreServices.framework */,
+				753529321859DE90002C88DB /* SystemConfiguration.framework */,
+				750CE5CD1819460A000CBC40 /* UIKit.framework */,
+				75725F26180C3C32000D24E8 /* CoreLocation.framework */,
+				75725EF0180C3538000D24E8 /* Foundation.framework */,
+				75725EFE180C3538000D24E8 /* XCTest.framework */,
+				751C81C7180D609900C636E1 /* CoreGraphics.framework */,
+				AAC7D89C54194444AE3E9DBB /* libPods-BLEKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75725EF2180C3538000D24E8 /* BLEKit */ = {
+			isa = PBXGroup;
+			children = (
+				751C81C0180D5FE600C636E1 /* UNCoding.h */,
+				75725F16180C3701000D24E8 /* Private */,
+				75725EF5180C3538000D24E8 /* BLEKit.h */,
+				75725EF7180C3538000D24E8 /* BLEKit.m */,
+				750CE5CA18193C5A000CBC40 /* BLEKitDelegate.h */,
+				750CE5CB18193C5A000CBC40 /* BLEKitDelegate.m */,
+				752AB4931833A80E00FEEEBF /* Actions */,
+				7507F584181162B900C04DE5 /* API */,
+				75725EF3180C3538000D24E8 /* Supporting Files */,
+			);
+			path = BLEKit;
+			sourceTree = "<group>";
+		};
+		75725EF3180C3538000D24E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75725EF4180C3538000D24E8 /* BLEKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75725F16180C3701000D24E8 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				75108A0A180D87F700ECF848 /* BLEKitPrivate.h */,
+				75725F1D180C3947000D24E8 /* UNCodingUtil.h */,
+				75725F1E180C3947000D24E8 /* UNCodingUtil.m */,
+				75725F1A180C38F5000D24E8 /* UNMutableURLRequest.h */,
+				75725F1B180C38F5000D24E8 /* UNMutableURLRequest.m */,
+				75725F17180C3701000D24E8 /* UNURLConnection.h */,
+				75725F18180C3701000D24E8 /* UNURLConnection.m */,
+				758ECD3E183E3D3200A5C383 /* CLBeacon+BLEKit.h */,
+				758ECD3F183E3D3200A5C383 /* CLBeacon+BLEKit.m */,
+				757D6342186350B80043FD71 /* SAMCache+BLEKit.h */,
+				757D6343186350B80043FD71 /* SAMCache+BLEKit.m */,
+				75926A2D187C2702004309A5 /* BLEBeaconsRangeBatch.h */,
+				75926A2E187C2702004309A5 /* BLEBeaconsRangeBatch.m */,
+				75BF1D5D187DF7FD00B29B8A /* BLEEventScheduler.h */,
+				75BF1D5E187DF7FD00B29B8A /* BLEEventScheduler.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		75C57491183676E600FBAF7F /* yelp-ios-api-v2 */ = {
+			isa = PBXGroup;
+			children = (
+				75C57494183676E600FBAF7F /* YLClient.h */,
+				75C57495183676E600FBAF7F /* YLClient.m */,
+			);
+			path = "yelp-ios-api-v2";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75725EEC180C3538000D24E8 /* BLEKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75725F10180C3538000D24E8 /* Build configuration list for PBXNativeTarget "BLEKit" */;
+			buildPhases = (
+				8D1D355E43364EAFAC51E68B /* Check Pods Manifest.lock */,
+				75725EE9180C3538000D24E8 /* Sources */,
+				75725EEA180C3538000D24E8 /* Frameworks */,
+				75725EEB180C3538000D24E8 /* CopyFiles */,
+				C6C5ABDB106B43BBBCAFEA85 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEKit;
+			productName = BLEKit;
+			productReference = 75725EED180C3538000D24E8 /* libBLEKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75725EE5180C3538000D24E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "UP-NEXT";
+			};
+			buildConfigurationList = 75725EE8180C3538000D24E8 /* Build configuration list for PBXProject "BLEKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75725EE4180C3538000D24E8;
+			productRefGroup = 75725EEE180C3538000D24E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75725EEC180C3538000D24E8 /* BLEKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D1D355E43364EAFAC51E68B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C5ABDB106B43BBBCAFEA85 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BLEKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75725EE9180C3538000D24E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75108A10180D930900ECF848 /* BLEAction.m in Sources */,
+				750CE5CC18193C5A000CBC40 /* BLEKitDelegate.m in Sources */,
+				75926A2F187C2702004309A5 /* BLEBeaconsRangeBatch.m in Sources */,
+				752AB4981833A80E00FEEEBF /* BLEFacebookAction.m in Sources */,
+				751E1FD01834D7B8003BA246 /* BLEContentViewController.m in Sources */,
+				751C81BF180D4D3400C636E1 /* BLEZone.m in Sources */,
+				75725F19180C3701000D24E8 /* UNURLConnection.m in Sources */,
+				75725F1C180C38F5000D24E8 /* UNMutableURLRequest.m in Sources */,
+				75BF1D5F187DF7FD00B29B8A /* BLEEventScheduler.m in Sources */,
+				75725F25180C3BA0000D24E8 /* BLELocation.m in Sources */,
+				757140AF185B365F00FDACBC /* BLEFoursquareAction.m in Sources */,
+				7521ED801859FB5900F9C9E1 /* BLENotificationAction.m in Sources */,
+				751E1FCD1834D373003BA246 /* BLEContentAction.m in Sources */,
+				75C57490183668E100FBAF7F /* BLEYelpAction.m in Sources */,
+				75725F22180C3AFC000D24E8 /* BLEBeacon.m in Sources */,
+				758ECD40183E3D3200A5C383 /* CLBeacon+BLEKit.m in Sources */,
+				75725F1F180C3947000D24E8 /* UNCodingUtil.m in Sources */,
+				75108A13180D931B00ECF848 /* BLECondition.m in Sources */,
+				757D6344186350B80043FD71 /* SAMCache+BLEKit.m in Sources */,
+				75108A0D180D90F200ECF848 /* BLETrigger.m in Sources */,
+				75C5749B183676E600FBAF7F /* YLClient.m in Sources */,
+				75725EF8180C3538000D24E8 /* BLEKit.m in Sources */,
+				75D49B2D1833C3EE00FA7D5F /* BLEAlertAction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		75725F0E180C3538000D24E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75725F0F180C3538000D24E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75725F11180C3538000D24E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC669877EF242D2B1BDCCBF /* Pods-BLEKit.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				DSTROOT = /tmp/BLEKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLEKit/BLEKit-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		75725F12180C3538000D24E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC669877EF242D2B1BDCCBF /* Pods-BLEKit.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				DSTROOT = /tmp/BLEKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BLEKit/BLEKit-Prefix.pch";
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75725EE8180C3538000D24E8 /* Build configuration list for PBXProject "BLEKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75725F0E180C3538000D24E8 /* Debug */,
+				75725F0F180C3538000D24E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75725F10180C3538000D24E8 /* Build configuration list for PBXNativeTarget "BLEKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75725F11180C3538000D24E8 /* Debug */,
+				75725F12180C3538000D24E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75725EE5180C3538000D24E8 /* Project object */;
+}

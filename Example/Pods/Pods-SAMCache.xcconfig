@@ -1,0 +1,1 @@
+PODS_SAMCACHE_OTHER_LDFLAGS = -framework Foundation

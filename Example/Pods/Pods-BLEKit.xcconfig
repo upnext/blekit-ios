@@ -1,0 +1,1 @@
+PODS_BLEKIT_OTHER_LDFLAGS = -framework CoreFoundation -framework CoreLocation -framework Foundation -framework MobileCoreServices -framework SystemConfiguration -framework UIKit -weak_framework Accounts -weak_framework Social -weak_framework Twitter

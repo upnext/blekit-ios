@@ -1,0 +1,5 @@
+#include "Pods-BLEKit-AFNetworking.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/AFOAuth1Client" "${PODS_ROOT}/Headers/FSOAuth" "${PODS_ROOT}/Headers/Facebook-iOS-SDK" "${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK" "${PODS_ROOT}/Headers/Foursquare-API-v2" "${PODS_ROOT}/Headers/SAMCache"
+OTHER_LDFLAGS = -ObjC ${PODS_BLEKIT_AFNETWORKING_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

@@ -1,0 +1,10 @@
+*.DS_Store
+
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+BLEKit.xcodeproj/project.xcworkspace/
+
+*.swp
+*~.nib
+*.lock
