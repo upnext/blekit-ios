@@ -29,6 +29,18 @@ pod 'BLEKit', :podspec => 'https://raw.github.com/upnext/blekit-ios/master/BLEKi
 
 Because of Cocoapods integration please use workspace (*.xcworkspace*) for Xcode to build library or Example application (example application can be found in **Example** folder).
 
+## JSON based iBeacon configuration
+
+Essential part of BLEKit experience is JSON based iBeacon configuration. JSON Configuration file describe actions, conditions and beacons that can be handled by BLEKit.
+
+Is simplest scenario all you have to do is write JSON Configuration file and initialize BLEKit instance with you file. If you need any custom action, you need to write support for that action (as described later) and register handler.
+
+For you convienence there are block-based callbacks.
+
+[Sample JSON](https://github.com/upnext/blekit-ios/blob/master/Example/BLEKitTestApp/zone.json) provide configuration that can be described as
+* on **enter** region please show **alert** action with **message** "Welcome at Upnext" 
+
+
 ##Example
 
 Example application can be found in **Example** folder.
