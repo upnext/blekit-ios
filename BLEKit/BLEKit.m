@@ -418,11 +418,16 @@ static NSMapTable *BLECustomActionClassess;
         action = [delegate actionObjectForBeacon:blebeacon trigger:trigger eventType:eventType];
     }
     
-    
-    // Finally use default delegate
+    // Try default delegate
     if (!action || ![action conformsToProtocol:@protocol(BLEAction)]) {
         action = [self.defaultDelegate actionObjectForBeacon:blebeacon trigger:trigger eventType:eventType];
     }
+
+    // finaly use BLEAction general instance
+    if (!action || ![action conformsToProtocol:@protocol(BLEAction)]) {
+        action = trigger.action;
+    }
+
     return action;
 }
 
