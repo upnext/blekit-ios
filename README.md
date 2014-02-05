@@ -50,6 +50,8 @@ Example application can be found in **Example** folder.
 ####Basic setup
 
 ````
+#import <BLEKit/BLEKit.h>
+
 NSError *error = nil;
 
 BLEKit *blekit = [BLEKit kitWithZoneAtPath:jsonPath error:&error];
@@ -66,9 +68,9 @@ if (error) {
 start looking for beacons
 
 ````
-    if (![self.bleKit startLookingForBeacons]) {
-    	// problem, check you settings (bluetooth, background refresh, location permission etc...)
-    }
+if (![self.bleKit startLookingForBeacons]) {
+    // problem, check you settings (bluetooth, background refresh, location permission etc...)
+}
 ````
 
 Please refer to the documentation for other ways to initialize object, including download from URL
