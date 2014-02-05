@@ -59,7 +59,7 @@ extern NSString * const BLEBeaconTimerFireNotification;
 /**
  *  Additional description for the beacon.
  */
-@property (strong) NSString *description;
+@property (strong) NSString *desc;
 /**
  *  Optional parameters for beacon.
  */

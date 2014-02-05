@@ -106,7 +106,7 @@ NSString * const BLEBeaconTimerFireNotification = @"BLEBeaconTimerFireNotificati
     outHash = NSUINTROTATE(outHash, NSUINT_BIT / 2) ^ [_major hash];
     outHash = NSUINTROTATE(outHash, NSUINT_BIT / 2) ^ [_minor hash];
     outHash = NSUINTROTATE(outHash, NSUINT_BIT / 2) ^ [_name hash];
-    outHash = NSUINTROTATE(outHash, NSUINT_BIT / 2) ^ [_description hash];
+    outHash = NSUINTROTATE(outHash, NSUINT_BIT / 2) ^ [_desc hash];
     return outHash;
 }
 
@@ -169,7 +169,7 @@ NSString * const BLEBeaconTimerFireNotification = @"BLEBeaconTimerFireNotificati
 
 - (void)updatePropertiesFromDictionary:(NSDictionary *)dictionary
 {
-    self->_description = dictionary[@"description"];
+    self->_desc = dictionary[@"description"];
     self->_name = dictionary[@"name"];
     self->_parameters = dictionary[@"parameters"];
     
@@ -232,7 +232,7 @@ NSString * const BLEBeaconTimerFireNotification = @"BLEBeaconTimerFireNotificati
 {
     BLEBeacon *copy = [super copyWithZone:zone];
     copy.name = self.name;
-    copy.description = self.description;
+    copy.desc = self.desc;
     copy.zone = self.zone;
     copy.location = self.location;
     copy.triggers = self.triggers;
