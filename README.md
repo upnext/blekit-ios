@@ -1,6 +1,6 @@
 # iOS BLEKit Library
 
-An iOS library for BLEKit developers to ease interaction with iBeacons.
+An iOS library for BLEKit developers to ease interaction with iBeacons. For a general, non-iOS specific BLEKit overview please consult the [BLEKit project](https://github.com/upnext/blekit).
 
 ---
 ## What does this library do?
