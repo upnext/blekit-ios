@@ -92,7 +92,7 @@
 
 - (void) performBeaconAction:(BLETrigger *)trigger forState:(BLEActionState)state eventType:(BLEEventType)eventType
 {
-    // Default actions are dafined in BLEKitDefaultDelegate
+    // Default actions are defined in BLEKitDefaultDelegate
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                    reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
                                  userInfo:nil];
