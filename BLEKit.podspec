@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name      = "BLEKit"
   s.version   = "0.5.0"
   s.summary   = "Low Energy Bluetooth Framework"
-  s.author    = { "Marcin Krzyzanowski" => "marcink@up-next.com"}
+  s.authors   = { "Upnext Ltd." => "http://www.up-next.com/beacon", "Marcin Krzyzanowski" => "marcink@up-next.com" }
   s.source    = { :git => "https://github.com/upnext/blekit-ios.git", :tag => "v#{s.version}" }
   s.license   = 'LICENSE*.*'
   
