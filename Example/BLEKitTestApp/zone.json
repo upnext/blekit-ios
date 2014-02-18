@@ -1,55 +1,49 @@
 {
-   "id":"UPNEXT",
-   "name":"Zone for beacon",
-   "ttl":86400,
-   "beacons":[
-      {
-         "id":"B84433F7-E81B-4750-8996-5ECC19D5D456+9351+8726",
-         "name":"Upnext Welcome",
-         "triggers":[
-            {
-               "id":"c4f293d0-8349-11e3-baa7-0800200c9a66",
-               "name":"Alerts",
-               "action":{
-                  "id":"bd796e30-8349-11e3-baa7-0800200c9a66",
-                  "type":"alert",
-                  "parameters":{
-                     "message":"Welcome at Upnext",
-                     "notification_title":"Welcome at Upnext",
-                     "notification_message":"Welcome at Upnext",
-                  }
-               },
-               "conditions":[
-                  {
-                     "id":"a529e7d4-2223-4e96-9e42-26ae851845a3",
-                     "type":"enter",
-                     "parameters":{
-                     }
-                  }
-               ]
-            }
-         ],
-         "triggers":[
-            {
-               "id":"611ef493-b229-4293-8985-b5e4a0c06547",
-               "name":"Alerts",
-               "action":{
-                  "id":"14143d68-24a8-47ef-b236-40935a7c93b2",
-                  "type":"custom-alert",
-                  "parameters":{
-                  }
-               },
-               "conditions":[
-                  {
-                     "id":"1fcd2222-a8ef-41b6-90da-f708670a3b6a",
-                     "type":"leave",
-                     "parameters":{
-                     }
-                  }
-               ]
-            }
-         ]
-
-      }
-   ]
+    "id": "UPNEXT",
+    "name": "Zone for beacon",
+    "ttl": 86400,
+    "beacons": [
+        {
+            "id": "B84433F7-E81B-4750-8996-5ECC19D5D456+9351+8726",
+            "name": "Upnext Welcome",
+            "triggers": [
+                {
+                    "action": {
+                        "id": "bd796e30-8349-11e3-baa7-0800200c9a66",
+                        "parameters": {
+                            "message": "Welcome at Upnext",
+                            "notification_message": "Welcome at Upnext",
+                            "notification_title": "Welcome at Upnext"
+                        },
+                        "type": "alert"
+                    },
+                    "conditions": [
+                        {
+                            "id": "a529e7d4-2223-4e96-9e42-26ae851845a3",
+                            "parameters": {},
+                            "type": "enter"
+                        }
+                    ],
+                    "id": "c4f293d0-8349-11e3-baa7-0800200c9a66",
+                    "name": "Alerts"
+                },
+                {
+                    "action": {
+                        "id": "14143d68-24a8-47ef-b236-40935a7c93b2",
+                        "parameters": {},
+                        "type": "custom-alert"
+                    },
+                    "conditions": [
+                        {
+                            "id": "1fcd2222-a8ef-41b6-90da-f708670a3b6a",
+                            "parameters": {},
+                            "type": "leave"
+                        }
+                    ],
+                    "id": "611ef493-b229-4293-8985-b5e4a0c06547",
+                    "name": "Alerts"
+                }
+            ]
+        }
+    ]
 }
