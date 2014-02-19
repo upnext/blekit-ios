@@ -116,4 +116,16 @@ extern NSString * const BLEBeaconTimerFireNotification;
  */
 - (instancetype) initWithZone:(BLEZone *)zone;
 
+/**
+ *  Initialize beacon with parameters
+ *
+ *  @param zone          zone
+ *  @param proximityUUID proximity UUID
+ *  @param major         major
+ *  @param minor         minor
+ *
+ *  @return Initialized object
+ */
+- (instancetype) initWithZone:(BLEZone *)zone proximityUUID:(NSUUID *)proximityUUID major:(NSNumber *)major minor:(NSNumber *)minor;
+
 @end

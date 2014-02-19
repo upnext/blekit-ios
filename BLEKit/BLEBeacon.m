@@ -82,6 +82,16 @@ NSString * const BLEBeaconTimerFireNotification = @"BLEBeaconTimerFireNotificati
     return self;
 }
 
+- (instancetype) initWithZone:(BLEZone *)zone proximityUUID:(NSUUID *)proximityUUID major:(NSNumber *)major minor:(NSNumber *)minor
+{
+    if (self = [self initWithZone:zone]) {
+        self.proximityUUID = proximityUUID;
+        self.major = major;
+        self.minor = minor;
+    }
+    return self;
+}
+
 - (NSString *)identifier
 {
     return self.blekit_identifier;
