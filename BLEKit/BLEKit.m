@@ -327,7 +327,7 @@ static NSMapTable *BLECustomActionClassess;
     NSSet *monitoredRegions = [self.locationManager.monitoredRegions filteredSetUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.identifier IN %@",monitoredRegionIdentifiers]];
     for (CLBeaconRegion *region in monitoredRegions) {
         if ([self.locationManager.rangedRegions containsObject:region]) {
-            [self.locationManager stopMonitoringForRegion:region];
+            [self.locationManager stopRangingBeaconsInRegion:region];
         }
         [self.locationManager stopMonitoringForRegion:region];
     }
