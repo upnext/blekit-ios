@@ -113,7 +113,6 @@ static BOOL BLEContentActionIsVisible = NO;
 - (UIViewController *)topViewController
 {
     UIViewController *vc = [[[UIApplication sharedApplication] keyWindow] rootViewController];
-    UIViewController *topMostVC = vc;
 
     return [BLEContentAction visibleViewControllerFrom:vc];
 }
