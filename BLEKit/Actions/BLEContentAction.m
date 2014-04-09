@@ -96,14 +96,26 @@ static BOOL BLEContentActionIsVisible = NO;
 
 #pragma mark - Private
 
++ (UIViewController *)visibleViewControllerFrom:(UIViewController *) vc {
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        return [BLEContentAction visibleViewControllerFrom:[((UINavigationController *) vc) visibleViewController]];
+    } else if ([vc isKindOfClass:[UITabBarController class]]) {
+        return [BLEContentAction visibleViewControllerFrom:[((UITabBarController *) vc) selectedViewController]];
+    } else {
+        if (vc.presentedViewController) {
+            return [BLEContentAction visibleViewControllerFrom:vc.presentedViewController];
+        } else {
+            return vc;
+        }
+    }
+}
+
 - (UIViewController *)topViewController
 {
     UIViewController *vc = [[[UIApplication sharedApplication] keyWindow] rootViewController];
     UIViewController *topMostVC = vc;
-    while (topMostVC.childViewControllers.count > 0) {
-        topMostVC = [topMostVC.childViewControllers lastObject];
-    }
-    return topMostVC;
+
+    return [BLEContentAction visibleViewControllerFrom:vc];
 }
 
 - (void) showContentView
