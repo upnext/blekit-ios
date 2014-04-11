@@ -56,7 +56,7 @@
     
     // Toolbar
     UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [closeButton setFrame:CGRectMake(0, 20, self.view.frame.size.width, 44)];
+    [closeButton setFrame:CGRectMake(0, 60, self.view.frame.size.width, 44)];
     [closeButton setTitle:NSLocalizedString(@"Close",nil) forState:UIControlStateNormal];
     [closeButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [closeButton addTarget:self action:@selector(closeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];

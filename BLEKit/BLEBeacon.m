@@ -164,7 +164,7 @@ NSString * const BLEBeaconTimerFireNotification = @"BLEBeaconTimerFireNotificati
             __strong __typeof(self)selfStrong = selfWeak;
             @synchronized(selfStrong) {
 #ifdef DEBUG
-                NSLog(@"%@ Time based event for beacon %@.", [self class], selfStrong);
+//                NSLog(@"%@ Time based event for beacon %@.", [self class], selfStrong);
 #endif
                 [[NSNotificationCenter defaultCenter] postNotificationName:BLEBeaconTimerFireNotification object:selfStrong];
             }

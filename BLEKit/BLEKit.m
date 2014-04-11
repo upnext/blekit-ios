@@ -45,7 +45,7 @@
 
 #import <FacebookSDK/FacebookSDK.h>
 
-#define BLEDelayEventTimeInterval 15
+#define BLEDelayEventTimeInterval 1
 
 /**
  *  Did receive local notification
