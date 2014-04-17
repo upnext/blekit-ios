@@ -52,10 +52,12 @@
     
     CGFloat yPos = self.view.frame.origin.y > 64 ?: 64.0;
     self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, yPos, self.view.frame.size.width, self.view.frame.size.height - yPos)];
+    self.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.webView];
     
     // Toolbar
     UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    closeButton.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [closeButton setFrame:CGRectMake(0, 60, self.view.frame.size.width, 44)];
     [closeButton setTitle:NSLocalizedString(@"Close",nil) forState:UIControlStateNormal];
     [closeButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];

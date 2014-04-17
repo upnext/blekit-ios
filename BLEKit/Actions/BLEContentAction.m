@@ -105,7 +105,11 @@ static BOOL BLEContentActionIsVisible = NO;
         if (vc.presentedViewController) {
             return [BLEContentAction visibleViewControllerFrom:vc.presentedViewController];
         } else {
-            return vc;
+            UIViewController *topMostVC = vc;
+            while (topMostVC.childViewControllers.count > 0) {
+                topMostVC = [topMostVC.childViewControllers lastObject];
+            }
+            return topMostVC;
         }
     }
 }
@@ -122,11 +126,11 @@ static BOOL BLEContentActionIsVisible = NO;
     BLEContentActionIsVisible = YES;
     
     self.contentViewController = [[BLEContentViewController alloc] initWithURL:self.url action:self];
-    self.contentViewController.view.frame = [UIApplication sharedApplication].keyWindow.bounds;
+    self.contentViewController.view.frame = [UIApplication sharedApplication].keyWindow.rootViewController.view.bounds;
     self.contentViewController.delegate = self;
     
     UIViewController *topViewController = [self topViewController];
-    
+
     // move topViewController
     [topViewController addChildViewController:self.contentViewController];
     [topViewController.view addSubview:self.contentViewController.view];
