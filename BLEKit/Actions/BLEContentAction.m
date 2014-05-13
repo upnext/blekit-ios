@@ -96,14 +96,29 @@ static BOOL BLEContentActionIsVisible = NO;
 
 #pragma mark - Private
 
++ (UIViewController *)visibleViewControllerFrom:(UIViewController *) vc {
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        return [BLEContentAction visibleViewControllerFrom:[((UINavigationController *) vc) visibleViewController]];
+    } else if ([vc isKindOfClass:[UITabBarController class]]) {
+        return [BLEContentAction visibleViewControllerFrom:[((UITabBarController *) vc) selectedViewController]];
+    } else {
+        if (vc.presentedViewController) {
+            return [BLEContentAction visibleViewControllerFrom:vc.presentedViewController];
+        } else {
+            UIViewController *topMostVC = vc;
+            while (topMostVC.childViewControllers.count > 0) {
+                topMostVC = [topMostVC.childViewControllers lastObject];
+            }
+            return topMostVC;
+        }
+    }
+}
+
 - (UIViewController *)topViewController
 {
     UIViewController *vc = [[[UIApplication sharedApplication] keyWindow] rootViewController];
-    UIViewController *topMostVC = vc;
-    while (topMostVC.childViewControllers.count > 0) {
-        topMostVC = [topMostVC.childViewControllers lastObject];
-    }
-    return topMostVC;
+
+    return [BLEContentAction visibleViewControllerFrom:vc];
 }
 
 - (void) showContentView
@@ -111,11 +126,11 @@ static BOOL BLEContentActionIsVisible = NO;
     BLEContentActionIsVisible = YES;
     
     self.contentViewController = [[BLEContentViewController alloc] initWithURL:self.url action:self];
-    self.contentViewController.view.frame = [UIApplication sharedApplication].keyWindow.bounds;
+    self.contentViewController.view.frame = [UIApplication sharedApplication].keyWindow.rootViewController.view.bounds;
     self.contentViewController.delegate = self;
     
     UIViewController *topViewController = [self topViewController];
-    
+
     // move topViewController
     [topViewController addChildViewController:self.contentViewController];
     [topViewController.view addSubview:self.contentViewController.view];
